@@ -21,7 +21,7 @@ header .container{
 }
 .text-logo{
     margin: 0 5px 0;
-    font-family: 'Poppins','sans-serif';
+    font-family: Poppins,sans-serif;
     font-size: 28px;
     font-weight: 800;
     line-height: 56px;
@@ -29,8 +29,8 @@ header .container{
     text-align: left;
     color: #FFFFFF;
 }
-header .options{
-    font-family: Poppins,'sans-serif';
+header .options a{
+    font-family: Poppins,sans-serif;
     font-size: 16px;
     font-weight: 500;
     letter-spacing: 0px;
@@ -78,13 +78,63 @@ ul li{
     background-color: #707070;
     transition: 0.4s;
 }
-/* fonts */
-@font-face {
-    font-family: 'Poppins';
-    src: url("/fonts/Poppins-ExtraBold.ttf");
+
+.main-titles{
+    margin: 75px 0;
 }
-@font-face {
-    font-family: 'Poppins';
-    src: url("/fonts/Poppins-Medium.ttf");
+.main-titles{
+    text-align: center;
+    font-family: Poppins,sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+}
+.text-White{
+    color: #FFFFFF;
+}
+.text-rgb{
+    color: #FE6783;
+}
+
+.btn-content{
 
 }
+.button-block{
+    margin: 0 auto;
+    text-align: center;
+    width: 400px;
+    height: 200px;
+}
+.button-block .title{
+    font-family: Poppins,sans-serif;
+    font-size: 23px;
+    color: #FFFFFF;
+}
+.btn-content .buttons{
+    margin: 30px 0;
+}
+.button-block .buttons .button-group{
+    display: flex;
+    justify-content: space-between;
+}
+.button-block .buttons .button{
+    padding: 12px 0;
+    width: 180px;
+    border-radius: 0.2rem;
+}
+.b1{
+    background-color: #306EF7;
+    color: #0c0a08;
+}
+.b2{
+    color: #707070;
+    border: 1px solid #707070;
+}
+
+/* fonts */
+@font-face {
+    font-family: Poppins,'sans-serif';
+    src: url("/fonts/Poppins-ExtraBold.ttf");
+    src: url("/fonts/Poppins-Bold.ttf");
+    src: url("/fonts/Poppins-Medium.ttf");
+}
+
