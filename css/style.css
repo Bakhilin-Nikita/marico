@@ -6,6 +6,14 @@
 a{
     text-decoration: none;
 }
+ul{
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+}
+ul li{
+    list-style-type: none;
+}
 .wrapper{
     background-color: #000000;
 }
@@ -39,14 +47,6 @@ header .options a{
 }
 header .options a,.button a{
      color: #707070;;
-}
-ul{
-    justify-content: space-between;
-    margin: 0;
-    padding: 0;
-}
-ul li{
-    list-style-type: none;
 }
 .header-nav{
     width: 270px;
@@ -116,19 +116,167 @@ ul li{
     display: flex;
     justify-content: space-between;
 }
-.button-block .buttons .button{
+ .buttons .button{
     padding: 12px 0;
     width: 180px;
     border-radius: 0.2rem;
 }
 .b1{
     background-color: #306EF7;
-    color: #0e0700;
+    color: #FFFFFF;
 }
 .b2{
     color: #707070;
     border: 1px solid #707070;
 }
+.creators{
+    margin: 120px 0 0;
+    padding: 0 0 30px;
+}
+.heading-text, .advantages-block .title{
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.heading-text{
+    text-align: center;
+    width: 100%;
+    font-size: 70px;
+}
+.advantages-block{
+    padding: 30px 50px 0;
+    display: flex;
+    justify-content: space-between;
+}
+.advantages-block .title{
+    font-size: 25px;
+}
+.advantages-block .text{
+    font-size: 16px;
+    color: #707070;
+}
+.advantages-block .block{
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.step{
+    text-align: center;
+    padding: 100px;
+}
+.step-title{
+    text-transform: uppercase;
+    color:  #3D82F2;
+    font-size: 16px;
+    font-weight: 600;
+}
+.heading-title{
+    color: #FFFFFF;
+    font-size: 50px;
+    font-weight: 600;
+}
+.step .text{
+    word-break: break-word;
+    margin: 0 auto;
+    width: 650px;
+    font-size: 16px;
+    color: #707070;
+}
+.step button{
+    margin: 20px 0 0;
+    background: inherit;
+    border: 1px solid;
+    color: #707070;
+    padding: 10px 30px;
+    border-radius: 0.3rem;
+}
+.step button:hover{
+    color: #FFFFFF;
+    background-color: #707070;
+    transition: 0.5s;
+}
+
+.homepage{
+    padding: 0 0 30px;
+}
+.homepage .container{
+    padding: 0 70px;
+    display: flex;
+    justify-content: space-between;
+}
+.homepage .img-block{
+    width: fit-content;
+    position: relative;
+}
+.homepage .pos-img{
+    position: relative;
+    z-index: 3;
+}
+.homepage .abs-img{
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+    left: calc(50% - 116px);
+}
+.button-group .button{
+    padding: 10px 20px;
+    border-radius: 0.3rem;
+}
+.homepage .title-homepage{
+    color: #FFFFFF;
+    font-size: 22px;
+    font-weight: 600;
+}
+.homepage .spot-content{
+    margin: 30px 0 0;
+}
+.homepage .spot-content .title{
+    font-size: 50px;
+    font-weight: 600;
+    color: #FFFFFF;
+}
+.homepage .spot-li{
+    margin: 30px 0 ;
+    font-size: 16px;
+    color: #FFFFFF;
+}
+.spot-content span{
+    color: #3C82F4;
+}
+.one-link{
+    padding: 0 0 50px;
+}
+.one-link .content-link{
+    display: flex;
+    justify-content: space-evenly;
+}
+.one-link .block{
+    position: relative;
+    padding: 10px 10px 0;
+    width: 500px;
+    height: 354px;
+    background-color: #0D0D0D;
+}
+.one-link .block .text{
+    font-size: 50px;
+    font-weight: 600;
+}
+.one-link img{
+    left: 21%;
+    position: absolute;
+    max-width: 100%;
+    object-fit: cover;
+}
+.one-link a{
+    border-radius: 0.3rem;
+    display: block;
+    color: #FFFFFF;
+    background-color: #306EF7;
+    width: fit-content;
+    padding: 10px 50px;
+    margin: 50px auto;
+}
+
+
 
 /* fonts */
 @font-face {
@@ -136,5 +284,6 @@ ul li{
     src: url("/fonts/Poppins-ExtraBold.ttf");
     src: url("/fonts/Poppins-Bold.ttf");
     src: url("/fonts/Poppins-Medium.ttf");
+    src: url("/fonts/Poppins-SemiBold.ttf");
 }
 
