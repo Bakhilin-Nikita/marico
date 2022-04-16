@@ -17,12 +17,19 @@ ul li{
 .wrapper{
     background-color: #000000;
 }
+.fa-bars{
+    color: #FFFFFF;
+}
 header{
     padding: 20px 0;
 }
-header .container{
+header .nav-menu{
+    flex-flow: wrap;
     display: flex;
     justify-content: space-between;
+}
+header .options a:hover{
+    color: purple;
 }
 .company-logo{
     display: flex;
@@ -33,7 +40,7 @@ header .container{
     font-size: 28px;
     font-weight: 800;
     line-height: 56px;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
     color: #FFFFFF;
 }
@@ -41,24 +48,35 @@ header .container{
     font-family: Poppins,sans-serif;
     font-size: 16px;
     font-weight: 500;
-    letter-spacing: 0px;
+    letter-spacing: 0;
     text-align: left;
     line-height: 3.5;
 }
 header .options a,.button a{
      color: #707070;;
 }
-.header-nav{
+header ul{
+    display: flex;
     width: 270px;
     margin: 0 auto;
 }
-.header-nav a:hover{
-    color: purple;
+header .options a{
+    transition: all 0.3s ease;
+}
+
+header .navigation-panel{
+    cursor: pointer;
+    display: none;
+}
+input[type="checkbox"]{
+    display: none;
 }
 .buttons-header a:hover{
     color: purple;
 }
 .header-nav ul{
+    flex-wrap: wrap;
+    list-style: none;
     display: flex;
 }
 .buttons-header{
@@ -80,13 +98,13 @@ header .options a,.button a{
 }
 
 .main-titles{
+    font-size: 80px;
     margin: 75px 0;
 }
 .main-titles{
     text-align: center;
     font-family: Poppins,sans-serif;
     font-weight: 700;
-    font-size: 80px;
 }
 .text-White{
     color: #FFFFFF;
@@ -121,6 +139,14 @@ header .options a,.button a{
     width: 180px;
     border-radius: 0.2rem;
 }
+ .online-dot .text{
+     display: flex;
+ }
+ .fa-circle{
+     line-height: inherit;
+     color: #0FC65C;
+     margin-right: 5px;
+ }
 .b1{
     background-color: #306EF7;
     color: #FFFFFF;
@@ -140,10 +166,10 @@ header .options a,.button a{
 .heading-text{
     text-align: center;
     width: 100%;
-    font-size: 70px;
+    font-size: 65px;
 }
 .advantages-block{
-    padding: 30px 50px 0;
+    padding: 30px 0 0;
     display: flex;
     justify-content: space-between;
 }
@@ -157,6 +183,11 @@ header .options a,.button a{
 .advantages-block .block{
     text-align: center;
     color: #FFFFFF;
+}
+.advantages-block img{
+    width: 28px;
+    height: 29px;
+
 }
 
 .step{
@@ -203,11 +234,15 @@ header .options a,.button a{
     display: flex;
     justify-content: space-between;
 }
+.homepage .text-content{
+    width: 45%;
+}
 .homepage .img-block{
-    width: fit-content;
+    width: 45%;
     position: relative;
 }
 .homepage .pos-img{
+    width: 100%;
     position: relative;
     z-index: 3;
 }
@@ -333,7 +368,7 @@ header .options a,.button a{
     margin: 30px auto;
 }
 .get-start .b1{
-    padding: 15px 50px;
+    padding: 15px 30px;
 }
 .online-dot {
     width: fit-content;
@@ -360,6 +395,7 @@ header .options a,.button a{
 }
 .footer-menu li{
     line-height: 5.5rem;
+    margin: 0 10px;
 }
 .footer-menu a{
     color: #707070;
